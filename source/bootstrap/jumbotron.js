@@ -1,12 +1,13 @@
 import React from 'react';
 import {classify} from './utils';
 import Container from './container';
+import './jumbotron.scss';
 
 export default class Jumbotron extends React.Component{
 	render(){
 		const CSS_NAME = 'jumbotron';
 		const props = Object.assign({}, this.props);
-		      props.className = classify('jumbotron',this.props.className);
+		      props.className = classify(CSS_NAME,props.className);
 		const containerFluid = props.containerFluid;
 		delete props.containerFluid;
 
