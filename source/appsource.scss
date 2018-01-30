@@ -10,3 +10,12 @@ $text-color: white;
 	@include background-it($image);
 	/*color: $text-color;*/
 }
+
+.app-appear{
+	opacity: 0.01;
+}
+
+.app-appear-active{
+	opacity: 1;
+	transition: opacity 500ms ease-in;
+}
